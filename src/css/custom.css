@@ -5,26 +5,66 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #0191ff;
+  --ifm-color-primary-dark: #0083e6;
+  --ifm-color-primary-darker: #007bda;
+  --ifm-color-primary-darkest: #0066b3;
+  --ifm-color-primary-light: #1b9cff;
+  --ifm-color-primary-lighter: #27a2ff;
+  --ifm-color-primary-lightest: #4eb2ff;
+  --ifm-background-color: #f1f5fa;
+
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #0191ff;
+  --ifm-color-primary-dark: #0083e6;
+  --ifm-color-primary-darker: #007bda;
+  --ifm-color-primary-darkest: #0066b3;
+  --ifm-color-primary-light: #1b9cff;
+  --ifm-color-primary-lighter: #27a2ff;
+  --ifm-color-primary-lightest: #4eb2ff;
+  --ifm-background-color: #202938;
+}
+
+.label_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-doc-markdown header {
+  display: none;
+}
+
+.gap--crest{
+  gap: 10px;
+}
+
+img{
+  border-radius: 8px;
+}
+
+html { scroll-behavior: smooth; }
+
+.req{
+  font-size: .813rem;
+  background-color: #fe9800de;
+  color: #f1f5fa;
+  padding: 0.5em;
+  border-radius: 6px;
+}
+.opt{
+  font-size: .813rem;
+  background-color: #8b90bbde;
+  color: #f1f5fa;
+  padding: 0.5em;
+  border-radius: 6px;
 }

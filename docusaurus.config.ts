@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
+  title: 'Daiana',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://daiana-help.seidoranalytics.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Seidor Analitycs', // Usually your GitHub org/user name.
+  projectName: 'DocuDaiana', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -31,8 +31,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es', 'en'],
   },
 
   presets: [
@@ -75,24 +75,37 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Daiana',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Daiana Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: '/docs/documentacion/intro',
+          sidebarId: 'DocumentSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentos',
+        },
+        {
+          to: '/docs/studio',
+          sidebarId: 'studioSidebar',
+          position: 'left',
+          label: 'Studio',
+        },
+        {
+          to: '/docs/realece',
+          sidebarId: 'releceSidebar',
+          position: 'left',
+          label: 'Realece Notes',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          type: 'localeDropdown',
           position: 'right',
-        },
+          label: 'Idioma',
+        }
+        
       ],
     },
     footer: {

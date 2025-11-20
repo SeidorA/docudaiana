@@ -8,7 +8,54 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: url(/img/index/hero.png) no-repeat center right #07153A;
+  min-height: 40vh;
+  small{
+    background: linear-gradient(#006ABB ,#007CFF);
+      -webkit-background-clip: text;
+      color: transparent;  
+      font-size: 2em;
+  }
+  h1{
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 1em;
+  }
+  
 }
+
+.studio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 0!important;
+  background: url(/img/index/bgstudio.png) no-repeat center center;
+  background-size: cover;
+  h2{
+    font-size: 5em;
+    color: #07153A;
+  }
+}
+.button{
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 16px;
+  position: relative;
+  background-color: #07153a;
+  color: white;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    background-color: #0f2255;
+  }
+}
+
 
 @media screen and (max-width: 996px) {
   .heroBanner {
@@ -20,4 +67,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.bgfull{
+  background: linear-gradient(
+188deg,
+rgba(153, 211, 255, 1) -85%,
+rgba(241, 245, 249, 1) 100%
+);
+  padding: 90px 0 !important;
 }
