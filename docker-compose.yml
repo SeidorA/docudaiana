@@ -1,0 +1,6 @@
+services:
+  docusaurus:
+    image: cloudseidoranalytics/docudaiana:latest
+    ports:
+      - "3030:80"
+    restart: unless-stopped
