@@ -1,0 +1,48 @@
+---
+title: "Release notes"
+sidebar_position: 1
+---
+import React, { useEffect } from 'react';
+import {Sliderelece, Previouslyedreace} from './slider/Sliderprimarry'
+import items from './news.json'
+import './index.css';
+
+export default function CustomIndex() {
+  
+  const releases = [
+      ...Object.keys(items).map(version => ({
+        version,
+        name: items[version].version,
+        link: version.replace(/\./g, ''), // o ajusta según tu lógica de links
+        date: items[version].date,
+        description: items[version].description
+      })),
+  ];
+  // Obtiene la versión más reciente (la que está más arriba en el JSON)
+  const currentrelece = Object.keys(items)[Object.keys(items).length - 1];
+  const isSpecialBanner = currentrelece === '200' || items[currentrelece]?.link === '200';
+  return (
+    
+      <>
+      {isSpecialBanner ? (
+        <div className="banner-special">
+          <div className="Textsiude">
+            <h3>New release</h3>
+            <h2>¡Daiana 2.0 ya está aquí!</h2>
+            <p>Más potente, más simple y lista para transformar tu forma de trabajar con IA.</p>
+            <a class="btn" href="/docs/realece/200" role="button">
+              Descubre más aquí
+            </a>
+          </div>
+          <div className="imagensiude">
+            <img src="/img/relece/200/ban.png" alt="Daiana 2.0" /> 
+          </div>
+        </div>
+      ) : (
+        <Sliderelece version={currentrelece} items={items[currentrelece].news} title={items[currentrelece].version} />
+      )}
+      
+      <Previouslyedreace  releases={releases} />
+      </>
+  );
+}

@@ -1,0 +1,158 @@
+{
+  "110": {
+    "version": "1.10.00",
+    "link": "110",
+    "date": "10/07/2024",
+    "description": "Main news of version 1.10.00",
+    "news": [
+      {
+        "title_slide": "Sharepoint",
+        "description": "Streamline the upload of shared documents from your company or work team from Microsoft SharePoint.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Chatpanel",
+        "description": "We have improved the experience in chat details to allow a complete visualization of the information accessible to the virtual assistant.",
+        "icon": "message"
+      },
+      {
+        "title_slide": "SAP Wizard and DB",
+        "description": "Optimize the creation of virtual assistants that integrate your knowledge base with SAP tables or databases using the new assistants to create assistants.",
+        "icon": "file"
+      }
+    ]
+  },
+  "120": {
+    "version": "1.20.00",
+    "link": "120",
+    "date": "10/08/2024",
+    "description": "Main news of version 1.20.00",
+    "news": [
+      {
+        "title_slide": "Follow-up questions",
+        "description": "Deepen the conversation to get greater clarity and offer more precise answers.",
+        "icon": "message"
+      },
+      {
+        "title_slide": "Warmth in responses",
+        "description": "Friendly and empathetic responses that generate a genuine connection with the user",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Self-training",
+        "description": "Continuous improvement through autonomous learning to better adapt to user needs",
+        "icon": "file"
+      }
+    ]
+  },
+  "140": {
+    "version": "1.40.00",
+    "link": "140",
+    "date": "10/09/2024",
+    "description": "Main news of version 1.40.00",
+    "news": [
+      {
+        "title_slide": "User download",
+        "description": "For this version, we included the possibility of downloading all users in CSV or Excel format, to easily manage all users who are on your platform.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Bulk user upload",
+        "description": "We enabled from the security tab, the option to upload more than one user at the same time and send access invitations.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Home Screen Customization",
+        "description": "We have added the possibility for each user to select their home screen. This new functionality allows customizing the user experience from the first moment, adapting to the individual preferences and needs of each user. Thus, accessibility is improved and navigation efficiency on the platform is optimized.",
+        "icon": "file"
+      }
+    ]
+  },
+  "150": {
+    "version": "1.50.00",
+    "link": "150",
+    "date": "10/10/2024",
+    "description": "Main news of version 1.50.00",
+    "news": [
+      {
+        "title_slide": "Improvements in YouTube connection",
+        "description": "From now on, a more precise and reliable extraction of information mentioned in any video can be performed. This improvement ensures that you can access valuable and relevant data quickly and without interruptions.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Download chats in Excel format",
+        "description": "With our latest update, you can download the conversations of any virtual assistant in Excel format.",
+        "icon": "file"
+      }
+    ]
+  },
+  "151": {
+    "version": "1.51.00",
+    "link": "151",
+    "date": "10/11/2024",
+    "description": "Main news of version 1.51.00",
+    "news": [
+      {
+        "title_slide": "Improvements in document upload",
+        "description": "We have optimized the document upload process, allowing greater speed and efficiency in file management.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Platform design update",
+        "description": "The interface has been renewed to offer a more intuitive and user-friendly experience.",
+        "icon": "file"
+      }
+    ]
+  },
+  "170": {
+    "version": "1.70.00",
+    "link": "170",
+    "date": "10/12/2024",
+    "description": "Main news of version 1.70.00",
+    "news": [
+      {
+        "title_slide": "Integration with Microsoft Teams",
+        "description": "The new integration of DAIANA in Microsoft Teams allows your collaborators to communicate fluently within Teams chats, improving efficiency and information accessibility, interacting in real time, obtaining instant answers. This not only improves productivity but also optimizes the user experience by centralizing AI interactions on a platform they already use daily.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Selection of Generative AI Model",
+        "description": "DAIANA offers you the possibility to choose in each of your assistants the generative AI model that best suits your needs, giving you greater flexibility and customization in creation.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Generation of Personalized Prompts",
+        "description": "We have added prompt generation to the configuration of each assistant, giving you the ability to create and customize prompts more precisely, which improves the accuracy and relevance of your assistants' responses. In addition, with the help of DAIANA itself, you can generate these prompts easily by simply providing your key insights, which facilitates the creation of more specific interactions adapted to your needs without the need for advanced technical knowledge.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Plan Expiration Time Notification",
+        "description": " Now you will receive timely notifications about your plan's expiration time, ensuring that you can manage it without service interruptions.",
+        "icon": "file"
+      }
+    ]
+  },
+  "190": {
+    "version": "1.90.00",
+    "link": "190",
+    "date": "10/01/2025",
+    "description": "Main news of version 1.90.00",
+    "news": [
+      {
+        "title_slide": "Authentication with Google",
+        "description": "Now you can access DAIANA faster and more securely using your Google account. With this new authentication option, we simplify access and improve the protection of your data.",
+        "icon": "Google"
+      },
+      {
+        "title_slide": "Daiana Studio",
+        "description": "We have developed Daiana Studio, which allows you to design personalized conversation flows with artificial intelligence to automate processes. With Daiana Studio you can:",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Integration with WhatsApp",
+        "description": "With this new integration, you can take advantage of artificial intelligence within conversational flows in the WhatsApp application, allowing you to:",
+        "icon": "file"
+      }
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "110": {
+    "version": "1.10.00",
+    "link": "110",
+    "date": "10/07/2024",
+    "description": "Principales novedades de la versión 1.10.00",
+    "news": [
+      {
+    "title_slide": "Sharepoint",
+    "description": "Agilice la carga de documentos compartidos de su empresa o equipo de trabajo desde el SharePoint de microsoft.",
+    "icon": "file"
+  },
+  {
+    "title_slide": "Chatpanel",
+    "description": "Hemos mejorado la experiencia en los detalles de los chats para permitir una visualización completa de la información accesible al asistente virtual.",
+    "icon": "message"
+  },
+  {
+    "title_slide": "Wizard SAP y BBD",
+    "description": "Optimice la creación de asistentes virtuales que integren su base de conocimientos con tablas SAP o bases de datos utilizando los nuevos asistentes para crear asistentes.",
+    "icon": "file"
+  }
+    ]
+  },
+  "120": {
+    "version": "1.20.00",
+    "link": "120",
+    "date": "10/08/2024",
+    "description": "Principales novedades de la versión 1.20.00",
+    "news": [
+      {
+        "title_slide": "Preguntas de seguimiento",
+        "description": "Profundiza en la conversación para obtener mayor claridad y ofrecer respuestas más precisas.",
+        "icon": "message"
+      },
+      {
+        "title_slide": "Calidez en las respuestas",
+        "description": "Respuestas amigables y empáticas que generan una conexión genuina con el usuario",
+        "icon": "file"
+      },{
+        "title_slide": "Autoentrenamiento",
+        "description": "Mejora continua a través del aprendizaje autónomo para adaptarse mejor a las necesidades del usuario",
+        "icon": "file"
+      }
+    ]
+  },
+  "140": {
+    "version": "1.40.00",
+    "link": "140",
+    "date": "10/09/2024",
+    "description": "Principales novedades de la versión 1.40.00",
+    "news": [
+      {
+        "title_slide": "Descarga de usuarios",
+        "description": "Para esta versión, incluimos la posibilidad de descargar todos los usuarios en formato CSV o Excel, para así poder gestionar de manera fácil a todos los usuarios que están en su plataforma.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Carga masiva de usuarios",
+        "description": "Habilitamos desde la pestaña de seguridad, la opción de cargar mas de un usuario al mismo tiempo y enviar invitaciones de acceso.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Personalización de la Pantalla Inicial",
+        "description": "Hemos añadido la posibilidad de que cada usuario pueda seleccionar su pantalla inicial. Esta nueva funcionalidad permite personalizar la experiencia de uso desde el primer momento, adaptándose a las preferencias y necesidades individuales de cada usuario. De este modo, se mejora la accesibilidad y se optimiza la eficiencia en la navegación por la plataforma.",
+        "icon": "file"
+      }
+    ]
+  }, "150": {
+    "version": "1.50.00",
+    "link": "150",
+    "date": "10/10/2024",
+    "description": "Principales novedades de la versión 1.50.00",
+    "news": [
+      {
+        "title_slide": "Mejoras en la conexión a YouTube",
+        "description": "A partir de ahora se podrá realizar una extracción más precisa y confiable de la información mencionada en cualquier video. Esta mejora asegura que puedas acceder a datos valiosos y relevantes de manera rápida y sin interrupciones.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Descargar chats en formato Excel",
+        "description": "Con nuestra última actualización, puedes descargar las conversaciones de cualquier asistente virtual en formato Excel.",
+        "icon": "file"
+      }
+    ]
+  }, "151": {
+    "version": "1.51.00",
+    "link": "151",
+    "date": "10/11/2024",
+    "description": "Principales novedades de la versión 1.51.00",
+    "news": [
+      {
+        "title_slide": "Mejoras en la carga de documentos",
+        "description": "Hemos optimizado el proceso de carga de documentos, permitiendo una mayor velocidad y eficiencia en la gestión de archivos.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Actualización del diseño de la plataforma",
+        "description": "La interfaz ha sido renovada para ofrecer una experiencia más intuitiva y amigable para el usuario.",
+        "icon": "file"
+      }
+    ]
+  }, "170": {
+    "version": "1.70.00",
+    "link": "170",
+    "date": "10/12/2024",
+    "description": "Principales novedades de la versión 1.70.00",
+    "news": [
+      {
+        "title_slide": "Integración con Microsoft Teams",
+        "description": "La nueva integración de DAIANA en Microsoft Teams permite que tus colaboradores se comuniquen de manera fluida dentro de los chats de Teams, mejorando la eficiencia y la accesibilidad de la información, interactúen en tiempo real, obteniendo respuestas instantáneas. Esto no solo mejora la productividad, sino que también optimiza la experiencia del usuario al centralizar las interacciones con la IA en una plataforma que ya utilizan diariamente.",
+        "icon": "file"
+      },
+      {
+        "title_slide": "Selección del Modelo Generativo de IA",
+        "description": "DAIANA te ofrece la posibilidad de elegir en cada uno de tus asistentes el modelo generativo de IA que mejor se adapte a tus necesidades, brindándote mayor flexibilidad y personalización en la creación.",
+        "icon": "file"
+      },{
+        "title_slide": "Generación de Prompts Personalizados",
+        "description": "Hemos sumado en la configuración de cada asistente la generación de prompts, brindándote la capacidad de crear y personalizar prompts de manera más precisa, lo que mejora la exactitud y relevancia de las respuestas de tus asistentes. Además, con la ayuda de la propia DAIANA, podrás generar estos prompts de forma sencilla simplemente proporcionando tus insights clave, lo que facilita la creación de interacciones más específicas y adaptadas a tus necesidades sin necesidad de conocimientos técnicos avanzados.",
+        "icon": "file"
+      },{
+        "title_slide": "Notificación de Tiempo de Vencimiento de Plan",
+        "description": " Ahora recibirás notificaciones oportunas sobre el tiempo de vencimiento de tu plan, asegurando que puedas gestionarlo sin interrupciones en el servicio.",
+        "icon": "file"
+      }
+    ]
+  },"190": {
+    "version": "1.90.00",
+    "link": "190",
+    "date": "10/01/2025",
+    "description": "Principales novedades de la versión 1.90.00",
+    "news": [
+      {
+        "title_slide": "Autenticación con Google",
+        "description": "Ahora puedes acceder a DAIANA de forma más rápida y segura utilizando tu cuenta de Google. Con esta nueva opción de autenticación, simplificamos el acceso y mejoramos la protección de tus datos.",
+        "icon": "Google"
+      },
+      {
+        "title_slide": "Daiana Studio",
+        "description": "Hemos desarrollado Daiana Studio, que te permite diseñar flujos de conversación personalizados con inteligencia artificial para automatizar procesos. Con Daiana Studio puedes:",
+        "icon": "file"
+      },{
+        "title_slide": "Integración con WhatsApp",
+        "description": "Con esta nueva integración, puedes aprovechar la inteligencia artificial dentro de flujos conversacionales en la aplicación de WhatsApp, permitiéndote:",
+        "icon": "file"
+      }
+    ]
+  }
+}

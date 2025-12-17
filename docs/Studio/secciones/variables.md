@@ -69,6 +69,4 @@ Por ejemplo, en el Mensaje del Sistema del Agente:
 En la Plantilla de Prompt:
 
 ![a](/img/studio/variable/g.avif)
-## Recursos
 
-* [Pasar Variables a Función](../integrations/langchain/tools/custom-tool.md#pass-variables-to-function)

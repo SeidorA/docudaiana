@@ -12,7 +12,7 @@ Este enfoque centralizado simplifica el manejo de datos y permite una gestión e
 
 ## Configuración
 
-En este tutorial, configuraremos un sistema de [Retrieval Augmented Generation (RAG)](../use-cases/multiple-documents-qna.md) para recuperar información sobre la _Póliza de Propietarios de Vivienda LibertyGuard Deluxe_, un tema sobre el que los LLMs no están extensamente entrenados.
+En este tutorial, configuraremos un sistema de **Retrieval Augmented Generation (RAG)** para recuperar información sobre la _Póliza de Propietarios de Vivienda LibertyGuard Deluxe_, un tema sobre el que los LLMs no están extensamente entrenados.
 
 Usando los **Document Stores de Daiana Studio**, prepararemos y haremos upsert de datos sobre LibertyGuard y su conjunto de pólizas de seguro de hogar. Esto permitirá que nuestro sistema RAG responda con precisión a las consultas de los usuarios sobre las ofertas de seguro de hogar de LibertyGuard.
 
@@ -24,7 +24,7 @@ Usando los **Document Stores de Daiana Studio**, prepararemos y haremos upsert d
 
 ## 2. Seleccionar un Document Loader
 
-* Ingresa al Document Store que acabas de crear y selecciona el [Document Loader](../integrations/langchain/document-loaders/) que deseas usar. En nuestro caso, como nuestro conjunto de datos está en formato PDF, usaremos el [PDF Loader](../integrations/langchain/document-loaders/pdf-file.md).
+* Ingresa al Document Store que acabas de crear y selecciona el **Document Loader** que deseas usar. En nuestro caso, como nuestro conjunto de datos está en formato PDF, usaremos el **PDF Loader**.
 
 ![1](/img/studio/Documentos/b1.avif)
 ![1](/img/studio/Documentos/b2.avif)
@@ -38,10 +38,10 @@ Usando los **Document Stores de Daiana Studio**, prepararemos y haremos upsert d
 ![1](/img/studio/Documentos/c.webp)
 
 
-* Finalmente, selecciona el [Text Splitter](../integrations/langchain/text-splitters/) que deseas usar para dividir tus datos. En nuestro caso particular, usaremos el [Recursive Character Text Splitter](../integrations/langchain/text-splitters/recursive-character-text-splitter.md).
+* Finalmente, selecciona el **Text Splitter** que deseas usar para dividir tus datos. En nuestro caso particular, usaremos el **Recursive Character Text Splitter**
 
 ::::info
-En esta guía, hemos agregado un tamaño generoso de **Chunk Overlap** para asegurar que no se pierda información relevante entre chunks. Sin embargo, el tamaño óptimo de superposición depende de la complejidad de tus datos. Es posible que necesites ajustar este valor según tu conjunto de datos específico y la naturaleza de la información que deseas extraer. Más sobre este tema en esta [guía](../use-cases/upserting-data.md).
+En esta guía, hemos agregado un tamaño generoso de **Chunk Overlap** para asegurar que no se pierda información relevante entre chunks. Sin embargo, el tamaño óptimo de superposición depende de la complejidad de tus datos. Es posible que necesites ajustar este valor según tu conjunto de datos específico y la naturaleza de la información que deseas extraer. Más sobre este tema en esta **guía**.
 ::::
 
 ![1](/img/studio/Documentos/d.avif)
@@ -49,11 +49,11 @@ En esta guía, hemos agregado un tamaño generoso de **Chunk Overlap** para aseg
 
 ## 4. Vista Previa de tus Datos
 
-* Ahora podemos previsualizar cómo se dividirán nuestros datos usando nuestra configuración actual de [Text Splitter](../integrations/langchain/text-splitters/); `chunk_size=1500` y `chunk_overlap=750`.
+* Ahora podemos previsualizar cómo se dividirán nuestros datos usando nuestra configuración actual de **Text Splitter**; `chunk_size=1500` y `chunk_overlap=750`.
 
 ![1](/img/studio/Documentos/e.avif)
 
-* Es importante experimentar con diferentes [Text Splitters](../integrations/langchain/text-splitters/), tamaños de Chunk y valores de Overlap para encontrar la configuración óptima para tu conjunto de datos específico. Esta vista previa te permite refinar el proceso de división y asegurar que los chunks resultantes sean adecuados para tu sistema RAG.
+* Es importante experimentar con diferentes **Text Splitters**, tamaños de Chunk y valores de Overlap para encontrar la configuración óptima para tu conjunto de datos específico. Esta vista previa te permite refinar el proceso de división y asegurar que los chunks resultantes sean adecuados para tu sistema RAG.
 
 ![1](/img/studio/Documentos/f.avif)
 
@@ -94,7 +94,7 @@ El proceso de upsert comprende tres pasos fundamentales:
 
 ### 1. Seleccionar Embeddings
 
-* Haz clic en la tarjeta "Select Embeddings" y elige tu [modelo de embedding](../integrations/langchain/embeddings/) preferido. En nuestro caso, seleccionaremos OpenAI como proveedor de embedding y usaremos el modelo "text-embedding-ada-002" con 1536 dimensiones.
+* Haz clic en la tarjeta "Select Embeddings" y elige tu **modelo de embedding** preferido. En nuestro caso, seleccionaremos OpenAI como proveedor de embedding y usaremos el modelo "text-embedding-ada-002" con 1536 dimensiones.
 
 ![1](/img/studio/Documentos/j.avif)
 
@@ -102,7 +102,7 @@ El proceso de upsert comprende tres pasos fundamentales:
 
 ### 2. Seleccionar Vector Store
 
-* Haz clic en la tarjeta "Select Vector Store" y elige tu [Vector Store](../integrations/langchain/vector-stores/) preferido. En nuestro caso, como necesitamos una opción lista para producción, seleccionaremos Upstash.
+* Haz clic en la tarjeta "Select Vector Store" y elige tu **Vector Store** preferido. En nuestro caso, como necesitamos una opción lista para producción, seleccionaremos Upstash.
 
 ![1](/img/studio/Documentos/k.avif)
 
@@ -110,7 +110,7 @@ El proceso de upsert comprende tres pasos fundamentales:
 
 ### 3. Seleccionar Record Manager
 
-* Para una gestión avanzada del conjunto de datos dentro del Vector Store, puedes opcionalmente seleccionar y configurar un [Record Manager](../integrations/langchain/record-managers.md). Las instrucciones detalladas sobre cómo configurar y utilizar esta función se pueden encontrar en la [guía](../integrations/langchain/record-managers.md) dedicada.
+* Para una gestión avanzada del conjunto de datos dentro del Vector Store, puedes opcionalmente seleccionar y configurar un **Record Manager**. Las instrucciones detalladas sobre cómo configurar y utilizar esta función se pueden encontrar en la **guía** dedicada.
 
 ![1](/img/studio/Documentos/k2.avif)
 
@@ -161,7 +161,7 @@ O, usar el Document Store (Vector):
 
 ## 10. API
 
-También hay soporte de APIs para crear, actualizar y eliminar document stores. Consulta [Document Store API](../api-reference/document-store.md) para más detalles. En esta sección, vamos a destacar 2 de las APIs más utilizadas: upsert y refresh.
+También hay soporte de APIs para crear, actualizar y eliminar document stores. Consulta **Document Store API** para más detalles. En esta sección, vamos a destacar 2 de las APIs más utilizadas: upsert y refresh.
 
 ### 1. Upsert
 
@@ -182,7 +182,7 @@ Ya que el PDF File Loader tiene funcionalidad de Upload File, se usará **form d
 ::::info
 Asegúrate de que el tipo de archivo enviado sea compatible con el tipo de archivo esperado del document loader. Por ejemplo, si se está usando un PDF File Loader, solo deberías enviar archivos **.pdf**.
 
-Para evitar tener loaders separados para diferentes tipos de archivo, recomendamos usar [File Loader](../integrations/langchain/document-loaders/file-loader.md)
+Para evitar tener loaders separados para diferentes tipos de archivo, recomendamos usar **File Loader**
 ::::
 
 

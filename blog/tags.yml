@@ -17,3 +17,8 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+Buenas prácticas:
+  label: Buenas prácticas
+  permalink: /buenas-practicas
+  description: Buenas prácticas tag description

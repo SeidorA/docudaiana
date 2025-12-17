@@ -1,0 +1,31 @@
+---
+title: "Release Notes"
+sidebar_position: 1
+---
+import React, { useEffect } from 'react';
+import {Sliderelece, Previouslyedreace} from './slider/Sliderprimarry'
+import items from './news.json'
+import './index.css';
+
+export default function CustomIndex() {
+  
+  const releases = [
+      ...Object.keys(items).map(version => ({
+        version,
+        name: items[version].version,
+        link: version.replace(/\./g, ''), // o ajusta según tu lógica de links
+        date: items[version].date,
+        description: items[version].description
+      })),
+  ];
+  // Obtiene la versión más reciente (la que está más arriba en el JSON)
+  const currentrelece = Object.keys(items)[Object.keys(items).length - 1];
+  return (
+    
+      <>
+      <Sliderelece version={currentrelece} items={items[currentrelece].news} title={items[currentrelece].version} />
+      <Previouslyedreace  releases={releases} />
+      </>
+  );
+}
+
