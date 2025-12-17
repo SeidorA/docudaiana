@@ -17,7 +17,7 @@ This section provides detailed guides on the main functionalities of **Daiana St
 
 <div className="row">
     <Feature title="Chatflows" description="Learn how to create, edit, and manage flows"  link="chatflows"  icon="network" />
-    <Feature title="Agents" description="Learn how to create, edit, and manage flows"  link="agentsflows"  icon="usersMap" />
+    <Feature title="Agents" description="Learn how to create, edit, and manage flows"  link="agentflows"  icon="usersMap" />
     <Feature title="Variables" description="Learn how to create, edit, and manage flows"  link="variables"  icon="code" />
     <Feature title="API Keys" description="Learn how to create, edit, and manage flows"  link="api"  icon="key" />
 </div>

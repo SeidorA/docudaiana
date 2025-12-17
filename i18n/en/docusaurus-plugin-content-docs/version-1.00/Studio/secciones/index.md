@@ -17,7 +17,7 @@ Esta sección proporciona guías detalladas sobre las funcionalidades principale
 
 <div className="row">
     <Feature title="Chatflows" description="Aprende a crear, editar y administrar flujos"  link="chatflows"  icon="network" />
-    <Feature title="Agentes" description="Aprende a crear, editar y administrar flujos"  link="agentsflows"  icon="usersMap" />
+    <Feature title="Agentes" description="Aprende a crear, editar y administrar flujos"  link="agentflows"  icon="usersMap" />
     <Feature title="Variables" description="Aprende a crear, editar y administrar flujos"  link="variables"  icon="code" />
     <Feature title="API Keys" description="Aprende a crear, editar y administrar flujos"  link="api"  icon="key" />
 </div>
