@@ -86,7 +86,7 @@ In this step, the **language model** (LLM) that the agent will use to generate i
 
   <TabItem value="SAP" label="SAP">
 
-![SAP](/img/agentes/crear/sap.png)
+![SAP](/img/agentes/crear/sapoptiona.png)
 1. Select the SAP system you want to connect to your agent.
 2. Complete the requested data.
     - Host
