@@ -87,6 +87,7 @@ En este paso se define qué **modelo de lenguaje** (LLM) utilizará el agente pa
   <TabItem value="SAP" label="SAP">
 
 ![SAP](/img/agentes/crear/sap.png)
+
 1. Seleccione el sistema SAP que desea conectar a su agente.
 2. Complete los datos solicitados.
     - Host
