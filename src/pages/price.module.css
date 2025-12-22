@@ -1,0 +1,110 @@
+.pricingContainer{
+    display: grid;
+    grid-template-rows: 48px 230px minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns:    302px minmax(0, 1fr) minmax(0, 1fr);
+    margin: 20px 5px;
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 1202px;
+}
+
+.row{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    h2{
+        margin: 0;
+    }
+}
+
+.rowcont{
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    justify-self: stretch;
+    border: 1px solid #E2E8F0;
+    p{
+        margin: 0;
+    }
+}
+.licencia{
+    
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    justify-self: stretch;
+    background-color: white;
+}
+.Enterprise{
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+    justify-self: stretch;
+    background-color: #07153A;
+    color: white;
+}
+.studio{
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+    justify-self: stretch;
+    background: #0191FF;
+    color: white;
+}
+
+
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 33.333333%;
+    hr{
+        width: 100%;
+        border: 0;
+        height: 3px;
+        background: #045ccf;
+        margin: 0;
+    }
+}
+.bugt{
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+}
+
+.priceDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    height: 100%;
+    width: 33.3333%;
+
+    h2, h4{
+        margin: 0;
+    }
+
+    h4{
+        font-weight: 400;
+        font-size: 12pt;
+        color: var(--hard);
+    }
+    h2{
+        color: var(--carbon);
+        font-size: 25pt;
+    }
+}
+
+.planeso{
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 10px;
+}

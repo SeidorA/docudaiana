@@ -103,11 +103,6 @@ const config: Config = {
           position: 'right',
           versions: ['2.00', '1.00'],
 
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-          label: 'Idioma',
         }
 
 

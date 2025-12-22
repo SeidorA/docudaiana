@@ -19,6 +19,8 @@
   --ifm-color-primary-lighter: #27a2ff;
   --ifm-color-primary-lightest: #4eb2ff;
   --ifm-background-color: #f1f5fa;
+  --hard: #94A3B8;
+  --carbon: #242528;
 
 }
 
@@ -32,6 +34,8 @@
   --ifm-color-primary-lighter: #27a2ff;
   --ifm-color-primary-lightest: #4eb2ff;
   --ifm-background-color: #202938;
+  --carbon: #F1F5F9;
+  --hard: #94A3B8;
 }
 
 .label_title {
