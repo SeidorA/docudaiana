@@ -58,13 +58,14 @@ IMPORTANTE: Si no completás estas URLs, el manifiesto falla. Para pruebas podé
 ## Agregar la pestaña personal
 
 1. Ir a App features → Add feature → Personal app.
-2. Dentro de Personal app, agregá una tab:
+![Pestaña personal](/img/integraciones/teams/personal.png)
+1. Dentro de Personal app, agregá una tab:
 
-   - Name: APP-Promesa.
+   - Name: NOMBRE-EMPRESA.
    - Content URL: El link real de tu chatflow informad
    - como Shared Chatbot en la pantalla Embed in website or use as API ```(Ej. https://mi-chatflow.empresa.ai).```
    - Scope: team,groupChat,personal
-3. Confirmá y guardá.
+2. Confirmá y guardá.
 
 ---
 
