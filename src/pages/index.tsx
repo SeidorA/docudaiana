@@ -49,7 +49,7 @@ export default function Home(): ReactNode {
         <img src="img/index/logoStudio.png" alt="" />
         <h2>Más rápido con Studio</h2>
 
-        <Link to="docs/Studio">
+        <Link to="docs/documentacion/Studio">
           <button className={styles.button}>
             Empezar
           </button>

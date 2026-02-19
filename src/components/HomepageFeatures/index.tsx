@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
         Descubre cómo funcionan los agentes en Daiana y cómo configurarlos.
       </Translate>
     ),
-    link: 'documentacion/Plataforma/agentes'
+    link: 'documentacion/enterprice/Plataforma/agentes/'
   },
 
   {
@@ -43,7 +43,7 @@ const FeatureList: FeatureItem[] = [
         Conoce las integraciones disponibles y cómo conectarlas con Daiana.
       </Translate>
     ),
-    link: 'documentacion/Plataforma/agentes/integraciones/appempresa'
+    link: 'documentacion/enterprice/Plataforma/agentes/integraciones/appempresa'
   },
   {
     title: <Translate id="homepage.feature.reports.title">Reportes y tableros</Translate>,
@@ -53,7 +53,7 @@ const FeatureList: FeatureItem[] = [
         Visualiza y analiza datos con los reportes y tableros de Daiana.
       </Translate>
     ),
-    link: 'documentacion/Plataforma/dashboard/reportes'
+    link: 'documentacion/enterprice/Plataforma/dashboard/reportes'
   },
   {
     title: <Translate id="homepage.feature.history.title">Historial</Translate>,
@@ -63,7 +63,7 @@ const FeatureList: FeatureItem[] = [
         Consulta el historial de actividades y eventos en Daiana.
       </Translate>
     ),
-    link: 'documentacion/Plataforma/historial'
+    link: 'documentacion/enterprice/Plataforma/historial'
   },
   /** 
     {
