@@ -1,0 +1,8 @@
+{
+    "label": "Editar agente",
+    "position": 5,
+    "link": {
+        "type": "doc",
+        "id": "documentacion/enterprice/Plataforma/agentes/editar/index"
+    }
+}

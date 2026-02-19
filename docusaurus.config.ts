@@ -9,6 +9,10 @@ const config: Config = {
   tagline: 'Documentación de Daiana',
   favicon: 'img/logo.svg',
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -85,12 +89,7 @@ const config: Config = {
           position: 'left',
           label: 'Documentos',
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'studioSidebar',
-          position: 'left',
-          label: 'Studio',
-        },
+
         {
           type: 'docSidebar',
           sidebarId: 'realeceSidebar',
