@@ -2,6 +2,7 @@
 slug: welcome
 title: Buenas prácticas
 tags: [Buenas prácticas, promp, IA]
+date: 2025-10-30
 ---
 
 ## Buenas prácticas para la creación y manejo de Prompts
@@ -10,10 +11,14 @@ Crear prompts efectivos no solo mejora la precisión y relevancia de los resulta
 
 Este documento está diseñado para ayudarte a perfeccionar la forma en que escribes y refinas tus prompts, garantizando respuestas más precisas y alineadas con tus necesidades. A través de una metodología iterativa, aprenderás a mejorar progresivamente tus instrucciones para obtener información más útil y relevante.
 
+
+
 ## El ciclo de mejora de prompts
 Para lograr prompts más efectivos, utilizamos un enfoque cíclico basado en tres pasos esenciales, representados en la siguiente infografía:
 
 ![mesa_de_trabajo_1.png](/img/promp/mesa_de_trabajo_1.png)
+
+<!-- truncate -->
 
 1. Su prompt en Daiana
 	- 

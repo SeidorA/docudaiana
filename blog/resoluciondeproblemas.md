@@ -2,11 +2,14 @@
 slug: Agentes IA
 title: "IA en acción: productividad sin límites"
 tags: [Buenas prácticas, promp, IA]
+date: 2025-09-20
 ---
 
 # ¿Por qué es importante integrar un agente de IA para resolver problemas cotidianos en una empresa mediana o grande?
 
 En el entorno empresarial actual, la eficiencia y la rapidez en la toma de decisiones son factores clave para mantenerse competitivo. A medida que las empresas medianas y grandes crecen, también lo hacen los desafíos operativos, administrativos y de atención interna. Es aquí donde la integración de un agente de inteligencia artificial (IA) puede marcar una gran diferencia.
+
+<!-- truncate -->
 
 ## 1. **Automatización de tareas repetitivas**
 
