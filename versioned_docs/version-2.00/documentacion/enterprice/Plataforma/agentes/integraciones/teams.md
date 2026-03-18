@@ -15,12 +15,12 @@ En esta guía encontrara detalladamente los pasos para integrar Daiana a Microso
 ## Configuración de la integración de Microsoft Teams en Daiana
 1. Ve a asistente virtuales, selecciona el asistente que dedeas integrar con Microsoft Teams y luego editar asistente
 
-
+![p1fix.jpg](/img/integraciones/p1fix.png)
 
 
 2. Selecciona la pestaña de integraciones y activa la opción de integrar con Microsoft Teams.
 
-
+![p2.jpg](/img/integraciones/p2.png)
 La integración de Microsoft Teams tiene la siguiente configuración:
 
 
@@ -31,6 +31,7 @@ La integración de Microsoft Teams tiene la siguiente configuración:
 
 Deberás proveer los valores solicitados siguiendo el paso a paso a continuación, estos se generan en el punto 2.Crear el bots … / 4. Campos requeridos
 
+![p3.jpg](/img/integraciones/p3.png)
 
 
 ## 1.Accede a la plataforma de administración.
@@ -43,7 +44,6 @@ Deberás proveer los valores solicitados siguiendo el paso a paso a continuació
  - Busca "Developer Portal" en la barra de búsqueda y selecciona la aplicación y haz clic en "Agregar".
  
 ![fix2.jpeg](/img/integraciones/teams/fix/fix2.jpeg)
-
 -Confirma la instalación y vuelve a la sección de "Aplicaciones"
 
 ![fix2.jpeg](/img/integraciones/teams/fix/fix3.jpeg)
@@ -53,8 +53,6 @@ Deberás proveer los valores solicitados siguiendo el paso a paso a continuació
 ## 2. Crear el bot desde la pestaña de herramientas (Tools)
 
 1. Abre Developer Portal.
-
-
 ![f5.jpeg](/img/integraciones/teams/fix/f5.jpeg)
 
 2. Una vez dentro de Developer Portal, ve a la pestaña "Herramientas" o "Tools" en el menú  superior.
@@ -83,7 +81,6 @@ Veras algo así:
 - Ahora has clic en “Client secrets” para generar la contraseña, luego clic en “Add a client secret for your bot”
 
 ![f12.jpeg](/img/integraciones/teams/fix/f12.jpeg)
-
 - Asegúrate de copiar y guardar esta clave ya que que es requerido en la configuración de Daiana como “App Password”. Finaliza haciendo clic en “Ok”.
 
 ![f13.jpeg](/img/integraciones/teams/fix/f13.jpeg)
@@ -99,17 +96,15 @@ Veras algo así:
 - Haz clic en "Crear aplicación".
 
 - **Opción 2 (Aplicaciones)**:
-  
 ![g2.jpeg](/img/integraciones/teams/fix/g2.jpeg)
 - Has clic en “New app”.
 - Ingresa un nombre para la aplicación (Ejemplo: "MiBot").
 
-1. Presiona "Add" para continuar.
-2. En el menú del lado izquierdo de la aplicación, vaya a la página App features en la sección Configurar y luego haga clic en "Bot".
-
+2. Presiona "Add" para continuar.
+3. En el menú del lado izquierdo de la aplicación, vaya a la página App features en la sección Configurar y luego haga clic en "Bot".
 ![g2.jpeg](/img/integraciones/teams/fix/g3.jpeg)
 
-1. Seleccione el bot cerado el paso anterior del menú desplegable. Compruebe los alcances deseados, Personal, Teams, Group Chat.
+4. Seleccione el bot cerado el paso anterior del menú desplegable. Compruebe los alcances deseados, Personal, Teams, Group Chat.
 
 ![g2.jpeg](/img/integraciones/teams/fix/g4.jpeg)
 ![g2.jpeg](/img/integraciones/teams/fix/g5.jpeg)
