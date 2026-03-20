@@ -43,7 +43,7 @@ const FeatureList: FeatureItem[] = [
         Conoce las integraciones disponibles y cómo conectarlas con Daiana.
       </Translate>
     ),
-    link: 'documentacion/enterprice/Plataforma/agentes/integraciones/appempresa'
+    link: 'documentacion/enterprice/Plataforma/agentes/integraciones/teams'
   },
   {
     title: <Translate id="homepage.feature.reports.title">Reportes y tableros</Translate>,
