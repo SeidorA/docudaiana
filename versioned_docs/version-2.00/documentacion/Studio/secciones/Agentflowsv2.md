@@ -46,7 +46,7 @@ Los agentes también pueden configurarse para **solicitar permiso antes de ejecu
 
 ### 📖  Estado Compartido
 
-El estado compartido permite el intercambio de datos entre agentes, especialmente útil para pasar datos a través de ramas o pasos no adyacentes en un flujo. Consulte **understanding-flow-stat**.
+El estado compartido permite el intercambio de datos entre agentes, especialmente útil para pasar datos a través de ramas o pasos no adyacentes en un flujo. Consulte [**understanding-flow-stat**](#14-nodo-de-ejecución-de-flujo-execute-flow-node).
 
 ### ⚡ Streaming
 
@@ -161,7 +161,7 @@ Consulta de extracción focal de información en origen Document Stores bases AI
 * **Funcionalidad:** Permite dirigir queries hacia base Document Stores, haciendo la captura y match referenciando similitud semántica. Se puede ubicar u dirigir u orientar u obtener de los Document Stores que precise extracciones focales evitando procesos con la inferencia general de Agent.
 * **Parámetros de Configuración**
   * **Knowledge / Document Stores**: Especifique desde cuales Almacenes o conocimiento extraer y hacia donde u a cuales u de estos preconfigurados a consultar.
-  * **Retriever Query**: Cadena enviada como variable, texto u consulta, a base de u variables dinámicas integradas `{{ variables }}`.
+  * **Retriever Query**: Cadena enviada como variable, texto u consulta, a base de u variables dinámicas integradas `variables`.
   * **Output Format**: Elige cómo se debe presentar la información recuperada: como `Text` sin formato o como `Text with Metadata` texto con metadatos, que pueden incluir detalles como los nombres o las ubicaciones de los documentos de origen.
   * **Update Flow State**: Actualizar Runtime a usar sus $flow.state con keys y valores en base u al obtener salidas.
 * **Entradas:** Las sentencias / consulta, queries variables.
@@ -181,7 +181,7 @@ Interacciones u comunicación u peticiones dirigidas a un external o servicio u 
   * **Request Headers**: Configuración a envío la header u y y variables y en diccionario/keys a headers param y values.
   * **URL Query Parameters**: Las variables al uso u al params param urls. URL a anexo u append o a. 
   * **Request Body Type**: Formación al payload de envío al endpoint, json de: `JSON`, `Raw text`, `Form Data`, `x-www-form-urlencoded`.
-  * **Request Body**: Introduce los datos reales para métodos como `POST` o `PUT`. El formato debe coincidir con el tipo de cuerpo seleccionado, y se pueden insertar datos dinámicos utilizando `{{ variables }}`.
+  * **Request Body**: Introduce los datos reales para métodos como `POST` o `PUT`. El formato debe coincidir con el tipo de cuerpo seleccionado, y se pueden insertar datos dinámicos utilizando `variables`.
   * **Response Type**: Tipo devuelto (respuesta parseada/tipo uso en interpretar respuesta) desde server external - ejemplo o como u `JSON`, `Text`, e `Array Buffer`, o a formato formato u `Base64` datos binario
 * **Entradas:**  Recibe datos de configuración como la URL, el método, los encabezados y el cuerpo, incorporando a menudo valores dinámicos procedentes de pasos anteriores del flujo de trabajo o de `$flow.state`.
 * **Salidas:**  Muestra la respuesta recibida del servidor externo, analizada según la opción seleccionada `Response Type`.
@@ -196,9 +196,9 @@ Ramificaciones de decisión y un condicionador condicional que permite derivar o
 * **Parámetros de Configuración**
   * **Conditions (Condiciones)**: las la parámetros de evaluará nodos nodo conjunto regla configurar o nodo.
     * **Type**: Cadena o de `String`, `Number`o `Boolean`de datos que comparar de a usará la dato.
-    * **Value 1**: variables valor a comparar usar texto o usaremos como el. a variables de la `{{ variables }}` la u u en.
+    * **Value 1**: variables valor a comparar usar texto o usaremos como el. a variables de la `variables` la u u en.
     * **Operation**: la de usar de la los para y el comparador lógico usar (e.g., `equal`, `contains`, `larger`, `isEmpty`) a el operador a la y e u.
-    * **Value 2**: Define el segundo valor para la comparación, si así lo requiere la operación elegida. Aquí también se pueden insertar datos dinámicos utilizando `{{ variables }}`.
+    * **Value 2**: Define el segundo valor para la comparación, si así lo requiere la operación elegida. Aquí también se pueden insertar datos dinámicos utilizando `variables`.
 * **Entradas:**  Requiere los datos de `Valor 1` y `Valor 2` para cada condición que se evalúe. Estos valores se obtienen de las salidas de nodos anteriores o se recuperan de $flow.state.
 * **Salidas:** Proporciona varios puntos de salida, que se corresponden con el resultado booleano (verdadero/falso) de las condiciones evaluadas. El flujo de trabajo continúa por la ruta específica conectada al punto de salida que coincide con el resultado.
 
@@ -208,13 +208,19 @@ Ramificaciones de decisión y un condicionador condicional que permite derivar o
 
 Ofrece una ramificación dinámica basada en IA a partir de instrucciones en lenguaje natural y del contexto.
 
-* **Funcionalidad:** Este nodo utiliza un modelo de lenguaje grande (LLM) para dirigir el flujo de trabajo. Analiza los datos de entrada proporcionados comparándolos con un conjunto de «escenarios» definidos por el usuario —posibles resultados o categorías— guiándose por `instrucciones` de alto nivel en lenguaje natural que definen la tarea de toma de decisiones. A continuación, el LLM determina qué escenario se ajusta mejor al contexto de entrada actual. Basándose en esta clasificación impulsada por IA, la ejecución del flujo de trabajo continúa por la ruta de salida específica correspondiente al escenario elegido. Este nodo resulta especialmente útil para tareas como el reconocimiento de la intención del usuario, el enrutamiento condicional complejo o la toma de decisiones situacionales matizadas en las que las reglas simples y predefinidas —como en el nodo de condición— resultan insuficientes.
-* **Parámetros de configuración**
+- **Funcionalidad:** Este nodo utiliza un modelo de lenguaje a gran escala (LLM) para dirigir el flujo de trabajo. Analiza los datos de entrada proporcionados comparándolos con un conjunto de «escenarios» definidos por el usuario —posibles resultados o categorías— guiándose por `instrucciones en lenguaje natural` de alto nivel que definen la tarea de toma de decisiones. 
+
+A continuación, el LLM determina qué escenario se ajusta mejor al contexto de entrada actual. Basándose en esta clasificación impulsada por IA, la ejecución del flujo de trabajo sigue la ruta de salida específica correspondiente al escenario elegido. Este nodo resulta especialmente útil para tareas como el reconocimiento de la intención del usuario, el enrutamiento condicional complejo o la toma de decisiones situacionales matizadas en las que las reglas simples y predefinidas —como en el nodo de condición— resultan insuficientes.
+
+- **Parámetros de configuración**
   * **Modelo**: Especifica el modelo de IA de un servicio elegido que realizará el análisis y la clasificación de escenarios.
   * **Instrucciones**: Define el objetivo general o la tarea para el LLM en lenguaje natural; por ejemplo, «Determina si la solicitud del usuario se refiere a ventas, asistencia o una consulta general».
-  * **Entrada**: Especifica los datos, a menudo texto de un paso anterior o entrada del usuario, utilizando `{{ variables }}`, que el LLM analizará para tomar su decisión de enrutamiento.
-  * **Escenarios**: Configura una matriz que define los posibles resultados o rutas distintas que puede seguir el flujo de trabajo. Cada escenario se describe en lenguaje natural —por ejemplo, «Consulta de ventas», «Solicitud de asistencia»,
+  * **Entrada**: Especifica los datos, a menudo texto de un paso anterior o entrada del usuario, utilizando `variables`, que el LLM analizará para tomar su decisión de enrutamiento.
+  * **Escenarios**: Configura una matriz en la que se definan los posibles resultados o las distintas rutas que puede seguir el flujo de trabajo. Cada escenario se describe en lenguaje natural —por ejemplo, «Consulta de ventas», «Solicitud de asistencia», «Pregunta general»— y cada uno de ellos se corresponde con un punto de salida único en el nodo.
 
+- **Inputs**:  Se necesitan los datos `Input` para el análisis y las `Instructions` para guiar al modelo de lenguaje grande (LLM).
+
+- **Outputs**: Proporciona varios puntos de salida, uno por cada `Scenario` definido. El flujo de trabajo continúa por la ruta específica conectada al punto de salida que el modelo de lenguaje grande (LLM) determina que se ajusta mejor a la entrada.
 
 ![AgentFlow V2](/img/studio/agentflow/v2/conditionalagent.png)
 
@@ -250,14 +256,19 @@ Redirige explícitamente la ejecución del flujo de trabajo a un nodo ejecutado 
 Detiene la ejecución del flujo de trabajo para solicitar una intervención explícita, una aprobación o comentarios por parte de un usuario humano, lo cual constituye un componente clave de los procesos «Human-in-the-Loop» (HITL).
 
 - **Funcionalidad:** Este nodo detiene el avance automatizado del flujo de trabajo y presenta información o una pregunta a un usuario humano a través de la interfaz de chat. El contenido que se muestra al usuario puede ser un texto estático predefinido o generado dinámicamente por un LLM en función del contexto actual del flujo de trabajo. Se ofrecen al usuario distintas opciones de acción —por ejemplo, «Continuar», «Rechazar»— y, si está habilitado, un campo para proporcionar comentarios textuales. Una vez que el usuario realiza una selección y envía su respuesta, el flujo de trabajo reanuda la ejecución siguiendo la ruta de salida específica correspondiente a la acción elegida.
-- **Parámetros de configuración**
-  - **Tipo de descripción**: Determina cómo se genera el mensaje o la pregunta que se presenta al usuario: `Fijo` (texto estático) o `Dinámico` (generado por un LLM).
-    * **Si el **Tipo de descripción** es `Fijo`**
-      * **Descripción**: Este campo contiene el texto exacto que se mostrará al usuario. Admite la inserción de datos dinámicos mediante `{{ variables }}`
-    * **Si el **Tipo de descripción** es `Dinámico`**
-      * **Modelo**: Selecciona el modelo de IA de un servicio elegido que generará el mensaje dirigido al usuario.
-      * **Solicitud**: proporciona las instrucciones o la solicitud para que el LLM seleccionado genere el mensaje que se muestra al usuario.
-  - **Comentarios:** si está habilitado, se mostrará al usuario una ventana de comentarios 
+
+- **Configuration Parameters**
+  - **Description Type**:  Determina cómo se genera el mensaje o la pregunta que se muestra al usuario: `Fixed` (texto estático) o `Dynamic` (generado por un modelo de lenguaje grande).
+    - Si el tipo de descripción es `Fixed`
+      - **Description**: Este campo contiene el texto exacto que se mostrará al usuario. Admite la inserción de datos dinámicos mediante `{{ variables }}`
+    - Si el tipo de descripción es `Dynamic`
+      - **Model**: Selecciona el modelo de IA de un servicio elegido que generará el mensaje dirigido al usuario.
+      - **Prompt**: Proporciona las instrucciones o la solicitud para que el LLM seleccionado genere el mensaje que se mostrará al usuario.
+  - **Comments**: Si está habilitado, se mostrará un campo de comentarios al usuario.
+
+* **Entradas:** Recibe la señal de ejecución para pausar el flujo de trabajo. Puede utilizar datos de pasos anteriores o `$flow.state` a través de variables en los campos `Descripción` o `Prompt`, si se ha configurado para contenido dinámico.
+
+* **Salidas:** Ofrece dos puntos de enlace de salida, cada uno de los cuales corresponde a una acción distinta del usuario: un punto de enlace para `Continuar` y otro para `Rechazar`. El flujo de trabajo continúa por la ruta conectada al punto de enlace que coincide con la selección del usuario.
 
 ![AgentFlow V2](/img/studio/agentflow/v2/humandin.png)
 
@@ -270,6 +281,8 @@ Envía un mensaje final al usuario y finaliza la ruta de ejecución actual.
   - **Mensaje**: Define el texto o la variable `{{ variable }}` que contiene el contenido que se enviará como respuesta final al usuario.
 * **Entradas:** Recibe el contenido del mensaje, que proviene de la salida de un nodo anterior o de un valor almacenado en `$flow.state`.
 * **Salidas:** Este nodo no tiene anclajes de salida, ya que su función es terminar la ruta de ejecución tras enviar la respuesta.
+
+
 
 ![AgentFlow V2](/img/studio/agentflow/v2/direct.png)
 
