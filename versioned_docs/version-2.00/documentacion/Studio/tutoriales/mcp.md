@@ -4,7 +4,7 @@ sidebar_position: 6
 ---
 
 
-En el tutorial anterior de [**Interactuando con la API**](./api), exploramos cómo permitir que los LLM llamen a APIs externas. Para mejorar la experiencia del usuario, Flowise proporciona una lista de herramientas preconstruidas. Consulte la sección de [**Herramientas**](../integrations/langchain/tools/) para ver la lista completa de integraciones disponibles.
+En el tutorial anterior de [**Interactuando con la API**](./api), exploramos cómo permitir que los LLM llamen a APIs externas. Para mejorar la experiencia del usuario, Flowise proporciona una lista de herramientas preconstruidas. Consulte la sección de **Herramientas** para ver la lista completa de integraciones disponibles.
 
 En los casos en los que la herramienta que necesita aún no esté disponible, puede crear una **Herramienta Personalizada** que se adapte a sus necesidades.
 
