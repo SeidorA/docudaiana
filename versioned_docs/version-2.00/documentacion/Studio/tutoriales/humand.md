@@ -48,9 +48,9 @@ El objetivo de este caso de uso es crear un sistema inteligente de respuesta de 
 2. Agregue un mensaje de sistema, por ejemplo:
 
 
-Eres un agente de atención al cliente que trabaja en Flowise Inc. Escribe una respuesta de correo electrónico profesional a la consulta del usuario. Utiliza las herramientas de búsqueda web para obtener más detalles sobre el cliente potencial.
+Eres un agente de atención al cliente que trabaja en Daiana Inc. Escribe una respuesta de correo electrónico profesional a la consulta del usuario. Utiliza las herramientas de búsqueda web para obtener más detalles sobre el cliente potencial.
 
-Responde siempre como Samantha, Representante de Atención al Cliente en Flowise. No utilices marcadores de posición (placeholders).
+Responde siempre como Samantha, Representante de Atención al Cliente en Daiana. No utilices marcadores de posición (placeholders).
 
 
 3. Agregue las siguientes herramientas para mejorar las capacidades del agente:
@@ -146,7 +146,7 @@ Cuando llega una consulta por correo electrónico, esto es lo que sucede:
 Cuando un Agente decide usar herramientas, sucede lo siguiente internamente:
 
 1. Dada una consulta del usuario, el LLM determina si se necesitan llamadas a herramientas.
-2. Si se identifican llamadas a herramientas a partir de la respuesta del LLM, Flowise localiza las herramientas correspondientes y ejecuta las funciones.
+2. Si se identifican llamadas a herramientas a partir de la respuesta del LLM, Daiana localiza las herramientas correspondientes y ejecuta las funciones.
 3. Los resultados de la ejecución de las herramientas se devuelven al LLM.
 4. El LLM decide entonces si se requieren llamadas a herramientas adicionales o si tiene suficiente información para devolver la respuesta final.
 
@@ -168,9 +168,9 @@ Podemos usar el sistema de respuesta de correo electrónico de muestra anterior,
 2. Agregue un mensaje de sistema al Agente, por ejemplo:
 
 
-Eres un agente de atención al cliente que trabaja en Flowise Inc. Crea un borrador de respuesta de correo electrónico profesional a la consulta del usuario. Utiliza las herramientas de búsqueda web para obtener más detalles sobre el cliente potencial.
+Eres un agente de atención al cliente que trabaja en Daiana Inc. Crea un borrador de respuesta de correo electrónico profesional a la consulta del usuario. Utiliza las herramientas de búsqueda web para obtener más detalles sobre el cliente potencial.
 
-Responde siempre como Samantha, Representante de Atención al Cliente en Flowise. No utilices marcadores de posición (placeholders).
+Responde siempre como Samantha, Representante de Atención al Cliente en Daiana. No utilices marcadores de posición (placeholders).
 
 La fecha de hoy es ```{{ current_date_time }}.```
 
@@ -219,6 +219,6 @@ La fecha de hoy es ```{{ current_date_time }}.```
 
 ![Humano en el Bucle](/img/tutoriales/humand/21.avif)
 
-4. Los usuarios fuera de Flowise pueden rechazar o aprobar:
+4. Los usuarios fuera de Daiana pueden rechazar o aprobar:
 
 ![Humano en el Bucle](/img/tutoriales/humand/22.avif)

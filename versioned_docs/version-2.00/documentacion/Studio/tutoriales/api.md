@@ -403,7 +403,7 @@ A continuación, agregue un nodo Agente. En esta configuración, el agente está
 
 ## Kit de Herramientas OpenAPI (OpenAPI Toolkit)
 
-Las 4 herramientas de solicitud funcionan muy bien si tienes un par de APIs, pero imagina tener decenas o cientos de APIs, esto podría volverse difícil de mantener. Para solucionar este problema, Flowise ofrece un kit de herramientas OpenAPI que puede recibir un archivo YAML de OpenAPI y analizar cada API como una herramienta. La [Especificación OpenAPI (OAS)](https://swagger.io/specification/) es un estándar aceptado universalmente para describir los detalles de las APIs RESTful en un formato que las máquinas pueden leer e interpretar.&#x20;
+Las 4 herramientas de solicitud funcionan muy bien si tienes un par de APIs, pero imagina tener decenas o cientos de APIs, esto podría volverse difícil de mantener. Para solucionar este problema, Daiana ofrece un kit de herramientas OpenAPI que puede recibir un archivo YAML de OpenAPI y analizar cada API como una herramienta. La [Especificación OpenAPI (OAS)](https://swagger.io/specification/) es un estándar aceptado universalmente para describir los detalles de las APIs RESTful en un formato que las máquinas pueden leer e interpretar.&#x20;
 
 Usando la API de Gestión de Eventos, podemos generar un archivo YAML de OpenAPI:
 
@@ -610,7 +610,7 @@ De los ejemplos anteriores, hemos visto cómo el Agente puede llamar dinámicame
 ## Mejores Prácticas
 
 * La interacción con las APIs se utiliza normalmente cuando se desea que un agente obtenga la información más actualizada. Por ejemplo, un agente podría recuperar la disponibilidad de su calendario, el estado de un proyecto u otros datos en tiempo real.
-* A menudo es útil incluir explícitamente la hora actual en el mensaje del sistema (system prompt). Flowise proporciona una variable llamada `{{current_date_time}}`, que recupera la fecha y hora actuales. Esto permite que el LLM sea consciente del momento presente, de modo que si pregunta por su disponibilidad para hoy, el modelo pueda hacer referencia a la fecha correcta. De lo contrario, puede basarse en la fecha de su último corte de entrenamiento, lo que devolvería información desactualizada. Por ejemplo:
+* A menudo es útil incluir explícitamente la hora actual en el mensaje del sistema (system prompt). Daiana proporciona una variable llamada `{{current_date_time}}`, que recupera la fecha y hora actuales. Esto permite que el LLM sea consciente del momento presente, de modo que si pregunta por su disponibilidad para hoy, el modelo pueda hacer referencia a la fecha correcta. De lo contrario, puede basarse en la fecha de su último corte de entrenamiento, lo que devolvería información desactualizada. Por ejemplo:
 
 ```
 You are helpful assistant.

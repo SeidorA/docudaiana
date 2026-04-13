@@ -4,7 +4,7 @@ iconName: "code"
 sidebar_position: 5
 ---
 
-Flowise permite a los usuarios crear variables que pueden ser utilizadas en los nodos. Las variables pueden ser Estáticas o de Tiempo de Ejecución.
+Daiana permite a los usuarios crear variables que pueden ser utilizadas en los nodos. Las variables pueden ser Estáticas o de Tiempo de Ejecución.
 
 ### Estáticas
 
@@ -44,7 +44,7 @@ Si existe una variable creada, el valor de la variable proporcionado en la API s
 
 ### Usando Variables
 
-Las variables pueden ser utilizadas por los nodos en Flowise. Por ejemplo, se crea una variable llamada **`character`**:
+Las variables pueden ser utilizadas por los nodos en Daiana. Por ejemplo, se crea una variable llamada **`character`**:
 
 <p align="center">
 ![a](/img/studio/variable/d.avif)

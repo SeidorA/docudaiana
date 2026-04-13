@@ -4,7 +4,7 @@ iconName: "code"
 sidebar_position: 5
 ---
 
-Flowise allows users to create variables that can be used in nodes. Variables can be Static or Runtime.
+Daiana allows users to create variables that can be used in nodes. Variables can be Static or Runtime.
 
 ### Static
 
@@ -44,7 +44,7 @@ If a variable already exists, the variable value provided in the API will overri
 
 ### Using Variables
 
-Variables can be used by nodes in Flowise. For example, a variable named **`character`** is created:
+Variables can be used by nodes in Daiana. For example, a variable named **`character`** is created:
 
 <p align="center">
 ![a](/img/studio/variable/d.avif)

@@ -4,7 +4,7 @@ sidebar_position: 6
 ---
 
 
-En el tutorial anterior de [**Interactuando con la API**](./api), exploramos cómo permitir que los LLM llamen a APIs externas. Para mejorar la experiencia del usuario, Flowise proporciona una lista de herramientas preconstruidas. Consulte la sección de **Herramientas** para ver la lista completa de integraciones disponibles.
+En el tutorial anterior de [**Interactuando con la API**](./api), exploramos cómo permitir que los LLM llamen a APIs externas. Para mejorar la experiencia del usuario, Daiana proporciona una lista de herramientas preconstruidas. Consulte la sección de **Herramientas** para ver la lista completa de integraciones disponibles.
 
 En los casos en los que la herramienta que necesita aún no esté disponible, puede crear una **Herramienta Personalizada** que se adapte a sus necesidades.
 
@@ -46,7 +46,7 @@ try {
 
 ### Cómo usar la función:
 
-* Puede usar cualquier librería importada en Flowise.
+* Puede usar cualquier librería importada en Daiana.
 * Puede usar las propiedades especificadas en el Esquema de Entrada como variables con el prefijo `$`:
   * Propiedad del Esquema de Entrada = `name`
   * Variable a usar en la Función = `$name`
@@ -78,7 +78,7 @@ En este caso, **los Argumentos de Entrada de la Herramienta deben definirse expl
 
 ## MCP
 
-MCP ([Protocolo de Contexto de Modelo o Model Context Protocol](https://modelcontextprotocol.io/introduction)) proporciona una forma estandarizada de conectar modelos de IA a diferentes fuentes de datos y herramientas. En otras palabras, en lugar de depender de las herramientas integradas de Flowise o crear una herramienta personalizada, uno puede usar servidores MCP que han sido creados por otros. El MCP es ampliamente considerado un estándar de la industria y suele ser compatible y mantenido por los proveedores oficiales. Por ejemplo, el MCP de GitHub es desarrollado y mantenido por el equipo de GitHub, con soporte similar proporcionado para Atlassian Jira, Brave Search y otros. Puede encontrar la lista de servidores compatibles [aquí](https://modelcontextprotocol.io/examples).
+MCP ([Protocolo de Contexto de Modelo o Model Context Protocol](https://modelcontextprotocol.io/introduction)) proporciona una forma estandarizada de conectar modelos de IA a diferentes fuentes de datos y herramientas. En otras palabras, en lugar de depender de las herramientas integradas de Daiana o crear una herramienta personalizada, uno puede usar servidores MCP que han sido creados por otros. El MCP es ampliamente considerado un estándar de la industria y suele ser compatible y mantenido por los proveedores oficiales. Por ejemplo, el MCP de GitHub es desarrollado y mantenido por el equipo de GitHub, con soporte similar proporcionado para Atlassian Jira, Brave Search y otros. Puede encontrar la lista de servidores compatibles [aquí](https://modelcontextprotocol.io/examples).
 
 ![Herramientas y MCP](/img/tutoriales/mcp/5.png)
 
@@ -88,7 +88,7 @@ Además de las herramientas MCP preconstruidas, la característica más potente 
 
 El MCP sigue una arquitectura cliente-servidor donde:
 
-* **Hosts** son aplicaciones de LLM (como Flowise) que inician las conexiones.
+* **Hosts** son aplicaciones de LLM (como Daiana) que inician las conexiones.
 * **Clientes** mantienen conexiones 1:1 con los servidores, dentro de la aplicación host (como el MCP Personalizado).
 * **Servidores** proporcionan contexto, herramientas y prompts a los clientes (ejemplo de [servidores](https://modelcontextprotocol.io/examples)).
 
@@ -105,7 +105,7 @@ Para manejar la comunicación real entre clientes y servidores, el MCP admite m�
 
 El transporte Stdio permite la comunicación a través de flujos de entrada y salida estándar. Esto es particularmente útil para integraciones locales y herramientas de línea de comandos.
 
-Utilice esto solo cuando use Flowise localmente, no cuando esté desplegado en servicios en la nube. Esto se debe a que ejecutar un comando como `npx` instalará el paquete del servidor MCP (ej: `@modelcontextprotocol/server-sequential-thinking`) localmente, y a menudo toma mucho tiempo para ello.
+Utilice esto solo cuando use Daiana localmente, no cuando esté desplegado en servicios en la nube. Esto se debe a que ejecutar un comando como `npx` instalará el paquete del servidor MCP (ej: `@modelcontextprotocol/server-sequential-thinking`) localmente, y a menudo toma mucho tiempo para ello.
 
 Es más adecuado para aplicaciones de escritorio como Claude Desktop, VS Code, etc.
 
@@ -127,7 +127,7 @@ Para Windows, consulte esta [guía](https://gist.github.com/feveromo/7a340d7795f
 
 #### **Comando Docker**
 
-El comando Docker es adecuado cuando la máquina que ejecuta Flowise también tiene acceso a Docker. Sin embargo, no es adecuado para despliegues en servicios en la nube donde el acceso a Docker está restringido o no disponible.
+El comando Docker es adecuado cuando la máquina que ejecuta Daiana también tiene acceso a Docker. Sin embargo, no es adecuado para despliegues en servicios en la nube donde el acceso a Docker está restringido o no disponible.
 
 ```json
 {
@@ -200,7 +200,7 @@ Cree un nodo Agente y agregue una nueva herramienta de MCP Personalizado. Para H
 
 #### Paso 3: Seleccionar las acciones
 
-Si la configuración del servidor MCP funciona correctamente, puede actualizar las **Acciones Disponibles**, y Flowise extraerá automáticamente todas las acciones disponibles del servidor MCP.
+Si la configuración del servidor MCP funciona correctamente, puede actualizar las **Acciones Disponibles**, y Daiana extraerá automáticamente todas las acciones disponibles del servidor MCP.
 
 ![Herramientas y MCP](/img/tutoriales/mcp/10.png)
 
