@@ -14,9 +14,7 @@ const config: Config = {
   },
   themes: ['@docusaurus/theme-mermaid'],
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
+
 
   // Set the production url of your site here
   url: 'https://daiana-help.seidoranalytics.com/',
@@ -67,6 +65,18 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
+    ],
+  ],
+  plugins: [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        hashed: true,
+        language: ["es", "en"],
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+      },
     ],
   ],
 
