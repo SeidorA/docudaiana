@@ -15,7 +15,7 @@ Aprende más sobre los detalles de algunas de las APIs más utilizadas: predicti
 
 <Accordion title="Consulta  todas las referencias de API públicas">
 <div className="row">
-    <Feature title="Asistentes" description="Referencia de API para crear y administrar asistentes virtuales inteligentes" link="/Studio/secciones/chatflows" icon="network" />
+    <Feature title="Asistentes" description="Referencia de API para crear y administrar asistentes virtuales inteligentes" link="/docs/Studio/api/asistentes" icon="network" />
     <Feature title="Mensaje de Chat" description="Referencia de API para enviar y recibir mensajes dentro de conversaciones" link="/Studio/secciones/chatflows" icon="network" />
     <Feature title="Flujos de Chat" description="Referencia de API para diseñar y controlar conversaciones automatizadas" link="/Studio/secciones/chatflows" icon="network" />
     <Feature title="Almacén de Documentos" description="Referencia de API para almacenar, buscar y conectar documentos con tus flujos" link="/Studio/secciones/chatflows" icon="network" />
