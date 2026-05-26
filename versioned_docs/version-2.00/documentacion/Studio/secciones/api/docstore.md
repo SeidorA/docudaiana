@@ -1,6 +1,6 @@
 ---
-title: "Document Store"
-description: Retrieve, create, update and manage document stores and their chunks.
+title: Almacenes de documentos
+description: Recupera, crea, actualiza y administra almacenes de documentos y sus fragmentos.
 slug: "/api/docstore"
 sidebar_position: 5
 hide_table_of_contents: true
@@ -10,11 +10,11 @@ import {Accordion} from '@site/docs/documentacion/cards/acordion.tsx'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## List all document stores
+## Lista todos los almacenes de documentos
 
 ``GET`` /document-store/store
 
-Retrieves a list of all document stores.
+Recupera una lista de todos los almacenes de documentos.
 
 <div className="row">
   <div className="col col--6">
@@ -70,11 +70,11 @@ data = response.json()
   </div>
 </div>
 
-## Get a specific document store
+## Obtiene un almacén de documentos específico
 
 ``GET`` /document-store/store/``{id}``
 
-Retrieves details of a specific document store by its ID.
+Recupera los detalles de un almacén de documentos específico por su ID.
 
 <div className="row">
   <div className="col col--6">
@@ -134,11 +134,11 @@ data = response.json()
   </div>
 </div>
 
-## Create a new document store
+## Crea un nuevo almacén de documentos
 
 ``POST`` /document-store/store
 
-Creates a new document store with the provided details.
+Crea un nuevo almacén de documentos con los detalles proporcionados.
 
 <div className="row">
   <div className="col col--6">
@@ -246,11 +246,11 @@ data = response.json()
   </div>
 </div>
 
-## Update a specific document store
+## Actualiza un almacén de documentos específico
 
 ``PUT`` /document-store/store/``{id}``
 
-Updates the details of a specific document store by its ID.
+Actualiza los detalles de un almacén de documentos específico por su ID.
 
 <div className="row">
   <div className="col col--6">
@@ -355,11 +355,11 @@ data = response.json()
   </div>
 </div>
 
-## Delete a specific document store
+## Elimina un almacén de documentos específico
 
 ``delete`` /document-store/store/``{id}``
 
-Deletes a document store by its ID.
+Elimina un almacén de documentos por su ID.
 
 <div className="row">
   <div className="col col--6">
@@ -420,11 +420,11 @@ data = response.json()
   </div>
 </div>
 
-## Get chunks from a specific document loader
+## Obtiene fragmentos de un cargador de documentos específico
 
 ``GET`` /document-store/chunks/``{storeId}``/``{loaderId}``/``{pageNo}``
 
-Get chunks from a specific document loader within a document store.
+Obtiene fragmentos de un cargador de documentos específico dentro de un almacén de documentos.
 
 <div className="row">
   <div className="col col--6">
@@ -490,11 +490,11 @@ data = response.json()
   </div>
 </div>
 
-## Update a specific chunk
+## Actualiza un fragmento específico
 
 ``PUT`` /document-store/chunks/``{storeId}``/``{loaderId}``/``{chunkId}``
 
-Updates a specific chunk from a document loader.
+Actualiza un fragmento específico de un cargador de documentos.
 
 <div className="row">
   <div className="col col--6">
@@ -585,11 +585,11 @@ data = response.json()
   </div>
 </div>
 
-## Delete a specific chunk from a document loader
+## Elimina un fragmento específico de un cargador de documentos
 
 ``delete`` /document-store/chunks/``{storeId}``/``{loaderId}``/``{chunkId}``
 
-Delete a specific chunk from a document loader.
+Elimina un fragmento específico de un cargador de documentos.
 
 <div className="row">
   <div className="col col--6">
@@ -656,11 +656,11 @@ data = response.json()
   </div>
 </div>
 
-## Upsert document to document store
+## Inserta un documento en el almacén de documentos
 
 ``POST`` /document-store/upsert/``{id}``
 
-Upsert document to document store.
+Inserta un documento en el almacén de documentos.
 
 <div className="row">
   <div className="col col--6">
@@ -794,11 +794,11 @@ data = response.json()
   </div>
 </div>
 
-## Re-process and upsert all documents in document store
+## Reprocesa e inserta todos los documentos en el almacén de documentos
 
 ``POST`` /document-store/refresh/``{id}``
 
-Re-process and upsert all existing documents in document store.
+Reprocesa e inserta todos los documentos existentes en el almacén de documentos.
 
 <div className="row">
   <div className="col col--6">
@@ -872,11 +872,11 @@ data = response.json()
   </div>
 </div>
 
-## Retrieval query
+## Consulta de recuperación
 
 ``POST`` /document-store/vectorstore/query
 
-Retrieval query for the upserted chunks.
+Consulta de recuperación para los fragmentos insertados.
 
 <div className="row">
   <div className="col col--6">
@@ -959,11 +959,11 @@ data = response.json()
   </div>
 </div>
 
-## Delete specific document loader and associated chunks
+## Elimina un cargador de documentos específico y sus fragmentos asociados
 
 ``delete`` /document-store/loader/``{storeId}``/``{loaderId}``
 
-Delete specific document loader and associated chunks from document store. This does not delete data from vector store.
+Elimina un cargador de documentos específico y sus fragmentos asociados del almacén de documentos. Esto no elimina los datos de la tienda vectorial.
 
 <div className="row">
   <div className="col col--6">
@@ -1027,11 +1027,11 @@ data = response.json()
   </div>
 </div>
 
-## Delete data from vector store
+## Elimina datos del almacén vectorial
 
 ``delete`` /document-store/vectorstore/``{id}``
 
-Only data that were upserted with Record Manager will be deleted from vector store.
+Solo se eliminarán los datos que fueron insertados con Record Manager del almacén vectorial.
 
 <div className="row">
   <div className="col col--6">

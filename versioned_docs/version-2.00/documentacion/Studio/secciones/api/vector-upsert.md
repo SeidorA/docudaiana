@@ -1,6 +1,6 @@
 ---
-title: Vector Upsert
-description: Upsert vector embeddings of documents in a chatflow
+title: Incrustar vectores
+description: Incrusta vectores en un chatflow.
 slug: "/api/vector-upsert"
 sidebar_position: 13
 hide_table_of_contents: true
@@ -10,11 +10,11 @@ import {Accordion} from '@site/docs/documentacion/cards/acordion.tsx'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-### Crear una nueva predicción
+### Incrustaciones vectoriales de tipo «upsert»
 
 ``post`` /vector/upsert/``{id}``
 
-Upsert vector embeddings of documents in a chatflow
+Incrusta vectores en un chatflow.
 
 <div className="row">
   <div className="col col--6">

@@ -1,5 +1,5 @@
 ---
-title: "Chatflows"
+title: Flujos de chat
 description: Retrieve, create, update and delete chatflows.
 slug: "/api/chatflows"
 sidebar_position: 4
@@ -10,11 +10,11 @@ import {Accordion} from '@site/docs/documentacion/cards/acordion.tsx'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## List all chatflows
+## Enlista todos los chatflows
 
 ``GET`` /chatflows
 
-Retrieve a list of all chatflows.
+Obtiene una lista de todos los chatflows.
 
 <div className="row">
   <div className="col col--6">
@@ -70,11 +70,11 @@ data = response.json()
   </div>
 </div>
 
-## Get chatflow by ID
+## Obtiene un chatflow por ID
 
 ``GET`` /chatflows/``{id}``
 
-Retrieve a specific chatflow by ID.
+Obtiene un chatflow por ID.
 
 <div className="row">
   <div className="col col--6">
@@ -134,11 +134,11 @@ data = response.json()
   </div>
 </div>
 
-## Get chatflow by API key
+## Obtiene un chatflow por API key
 
 ``GET`` /chatflows/apikey/``{apikey}``
 
-Retrieve a chatflow using an API key.
+Obtiene un chatflow por API key.
 
 <div className="row">
   <div className="col col--6">
@@ -198,11 +198,11 @@ data = response.json()
   </div>
 </div>
 
-## Create a new chatflow
+## Crea un nuevo chatflow
 
 ``POST`` /chatflows
 
-Create a new chatflow with the provided details.
+Crea un nuevo chatflow con los detalles proporcionados.
 
 <div className="row">
   <div className="col col--6">
@@ -323,11 +323,11 @@ data = response.json()
   </div>
 </div>
 
-## Update chatflow details
+## Actualiza los detalles de un chatflow existente
 
 ``PUT`` /chatflows/``{id}``
 
-Update the details of an existing chatflow.
+Actualiza los detalles de un chatflow existente.
 
 <div className="row">
   <div className="col col--6">
@@ -452,11 +452,11 @@ data = response.json()
   </div>
 </div>
 
-## Delete a chatflow
+## Elimina un chatflow
 
 ``delete`` /chatflows/``{id}``
 
-Delete a chatflow by ID.
+Elimina un chatflow por ID.
 
 <div className="row">
   <div className="col col--6">

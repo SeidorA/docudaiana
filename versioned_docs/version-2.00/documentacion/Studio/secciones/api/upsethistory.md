@@ -1,6 +1,6 @@
 ---
-title: Upsert History
-description: Retrieve all upsert history records with optional filters
+title: Historial de inserciones y actualizaciones
+description: Obtiene el historial de inserciones y actualizaciones con filtros opcionales
 slug: "/api/upsert-history"
 sidebar_position: 11
 hide_table_of_contents: true
@@ -9,7 +9,7 @@ import {Accordion} from '@site/docs/documentacion/cards/acordion.tsx'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-### Get all upsert history records
+### Obtener historial de inserciones y actualizaciones
 
 ``GET`` /vector/upsert-history/``{id}``
 
@@ -85,7 +85,7 @@ data = response.json()
 </div>
 
 
-### Delete upsert history records
+### Eliminar historial de inserciones y actualizaciones
 
 ``DELETE`` /vector/upsert-history/``{id}``
 

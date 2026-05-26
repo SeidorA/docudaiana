@@ -11,9 +11,9 @@ import TabItem from '@theme/TabItem';
 
 
 
-### Get all leads for a specific chatflow
+### Obtiene todos los leads para un flujo de chat específico
 ``post`` /Leads/``{id}``
-Retrieve all leads associated with a specific chatflow
+Recupera todos los leads asociados con un flujo de chat específico
 
 <div className="row">
   <div className="col col--6">
@@ -72,10 +72,10 @@ Retrieve all leads associated with a specific chatflow
 </div>
 
 
-### Create a new lead in a chatflow
+### Crea un nuevo lead en un flujo de chat
 
 ``post`` /Leads
-Create a new lead associated with a specific chatflow
+Crea un nuevo lead asociado con un flujo de chat específico
 
 <div className="row">
   <div className="col col--6">

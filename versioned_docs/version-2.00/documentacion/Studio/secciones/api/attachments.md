@@ -1,5 +1,5 @@
 ---
-title: Attachments
+title: Archivos adjuntos
 description: Return contents of the files in plain string format
 slug: "/api/attachments"
 sidebar_position: 2
@@ -9,10 +9,11 @@ import {Accordion} from '@site/docs/documentacion/cards/acordion.tsx'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-### Crear una nueva predicción
+### Crear attachments array
 
-``post`` /prediction/``{id}``
+``post`` /attachments/``{chatflowId}``/``{chatId}``
 
+Regresa los archivos en formato string plano
 
 <div className="row">
   <div className="col col--6">

@@ -1,6 +1,6 @@
 ---
-title: "Feedback"
-description: Retrieve all feedbacks for a chatflow
+title: "Retroalimentación"
+description: Recupera todas las retroalimentaciones para un flujo de chat
 slug: "/api/Feedback"
 sidebar_position: 6
 hide_table_of_contents: true
@@ -10,11 +10,11 @@ import {Accordion} from '@site/docs/documentacion/cards/acordion.tsx'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## List all chat messages
+## Obtiene todos los mensajes de chat
 
 ``GEt`` /Feedback/``{id}``
 
-Retrieve all feedbacks for a chatflow
+Recupera todas las retroalimentaciones para un flujo de chat
 
 <div className="row">
   <div className="col col--6">
@@ -91,11 +91,11 @@ Retrieve all feedbacks for a chatflow
 </div>
 
 
-## Create new chat message feedback
+## Crea una nueva retroalimentación de mensaje de chat
 
 ``POST`` /Feedback
 
-Create new feedback for a specific chat flow.
+Crea una nueva retroalimentación para un flujo de chat específico.
 
 <div className="row">
   <div className="col col--6">
@@ -218,11 +218,11 @@ Create new feedback for a specific chat flow.
 </div>
 
 
-## Update chat message feedback
+## Actualiza una retroalimentación de mensaje de chat
 
 ``PUT`` /Feedback/``{id}``
 
-Update a specific feedback
+Actualiza una retroalimentación específica
 
 <div className="row">
   <div className="col col--6">

@@ -9,10 +9,10 @@ import {Accordion} from '@site/docs/documentacion/cards/acordion.tsx'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Create a new assistant
+## Crear nuevo asistente
 ```post/assistants```
 
-Create a new assistant with the provided details
+Crea un nuevo asistente con los detalles proporcionados
 
 
 
@@ -217,10 +217,10 @@ data = response.json()
 
 ---
 
-## Get assistant by ID
+## Obtener asistente por ID
 ```get/assistants/{id}```
 
-Update the details of an existing assistant
+Obtiene los detalles de un asistente existente
 
 <div className="row">
   <div className="col col--6">
@@ -284,10 +284,10 @@ Update the details of an existing assistant
 ---
 
 
-## Update assistant details
+## Actualiza los detalles de un asistente existente
 ```put/assistants/{id}```
 
-Update the details of an existing assistant
+Actualiza los detalles de un asistente existente
 
 <div className="row">
   <div className="col col--6">
@@ -494,10 +494,10 @@ data = response.json()
 
 ---
 
-## Delete an assistant
+## Eliminar asistente
 ```delete/assistants/{id}```
 
-Delete an assistant by ID
+Elimina un asistente por ID
 
 <div className="row">
   <div className="col col--6">

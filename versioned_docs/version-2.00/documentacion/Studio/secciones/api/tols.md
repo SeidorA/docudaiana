@@ -1,6 +1,6 @@
 ---
-title: Tools
-description: Create, list, update and delete tools.
+title: Herramientas
+description: Herramientas para la creación, listado, actualización y eliminación de herramientas.
 slug: "/api/tools"
 sidebar_position: 10
 hide_table_of_contents: true
@@ -9,11 +9,11 @@ import {Accordion} from '@site/docs/documentacion/cards/acordion.tsx'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## List all tools
+## Obtiene todas las herramientas
 
 ``GET`` /tools
 
-Retrieve a list of all tools.
+Recupera una lista de todas las herramientas.
 
 <div className="row">
   <div className="col col--6">
@@ -69,11 +69,11 @@ data = response.json()
   </div>
 </div>
 
-## Get a tool by ID
+## Obtiene una herramienta por ID
 
 ``GET`` /tools/``{id}``
 
-Retrieve a specific tool by ID.
+Recupera una herramienta específica por su ID.
 
 <div className="row">
   <div className="col col--6">
@@ -133,11 +133,11 @@ data = response.json()
   </div>
 </div>
 
-## Create a new tool
+## Crea una nueva herramienta
 
 ``POST`` /tools
 
-Create a new tool.
+Crea una nueva herramienta.
 
 <div className="row">
   <div className="col col--6">
@@ -249,11 +249,11 @@ data = response.json()
   </div>
 </div>
 
-## Update a tool by ID
+## Actualiza una herramienta por ID
 
 ``PUT`` /tools/``{id}``
 
-Update a specific tool by ID.
+Actualiza una herramienta específica por su ID.
 
 <div className="row">
   <div className="col col--6">
@@ -364,11 +364,11 @@ data = response.json()
   </div>
 </div>
 
-## Delete a tool by ID
+## Elimina una herramienta por ID
 
 ``delete`` /tools/``{id}``
 
-Delete a specific tool by ID.
+Elimina una herramienta específica por su ID.
 
 <div className="row">
   <div className="col col--6">

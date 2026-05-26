@@ -1,5 +1,5 @@
 ---
-title: Prediction
+title: Predicción
 description: Return contents of the files in plain string format
 slug: "/api/prediction"
 sidebar_position: 9
@@ -9,11 +9,13 @@ import {Accordion} from '@site/docs/documentacion/cards/acordion.tsx'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-### Send message to flow and get AI response
+### Enviar mensaje al flujo y obtener respuesta de la IA
 
 ``post`` /prediction/``{id}``
 
-Send a message to your flow and receive an AI-generated response. This is the primary endpoint for interacting with your flows and assistants.**Authentication**: API key may be required depending on flow settings.
+Envía un mensaje a tu flujo y recibe una respuesta generada por la IA. Este es el endpoint principal para interactuar con tus flujos y asistentes.
+
+**Authentication**: Es posible que se requiera una clave API, dependiendo de la configuración del flujo.
 
 <div className="row">
   <div className="col col--6">

@@ -1,5 +1,5 @@
 ---
-title: "Chat Message"
+title: Mensajes de chat
 description: Retrieve all chat messages for a specific chatflow.
 slug: "/api/chatmessage"
 sidebar_position: 3
@@ -10,11 +10,11 @@ import {Accordion} from '@site/docs/documentacion/cards/acordion.tsx'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## List all chat messages
+## Enlista todos los mensajes de chat
 
 ``GEt`` /chatmessage/``{id}``
 
-Retrieve all chat messages for a specific chatflow.
+Recupera todos los mensajes de chat para un chatflow específico.
 
 <div className="row">
   <div className="col col--6">
@@ -108,7 +108,7 @@ data = response.json()
   </div>
 </div>
 
-## Delete all chat messages
+## Elimina todos los mensajes de chat
 
 ``delete`` /chatmessage/``{id}``
 

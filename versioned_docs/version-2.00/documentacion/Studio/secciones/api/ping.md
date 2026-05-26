@@ -1,6 +1,6 @@
 ---
 title: Ping
-description: Return contents of the files in plain string format
+description: Verifica si el servidor está funcionando
 slug: "/api/ping"
 sidebar_position: 8
 hide_table_of_contents: true
@@ -9,10 +9,10 @@ import {Accordion} from '@site/docs/documentacion/cards/acordion.tsx'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-### Crear una nueva predicción
+### Hacer un ping al servidor
 
 ``GET`` /ping
-Ping the server to check if it is running
+Verifica si el servidor está funcionando
 
 <div className="row">
   <div className="col col--6">

@@ -1,6 +1,6 @@
 ---
 title: Variables
-description: Create a new variable
+description: Crea, obtiene, actualiza y elimina variables
 slug: "/api/variables"
 sidebar_position: 12
 hide_table_of_contents: true
@@ -9,11 +9,11 @@ import {Accordion} from '@site/docs/documentacion/cards/acordion.tsx'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Create a new variable
+## Crea una nueva variable
 
 ``post`` /variables
 
-Create a new variable
+Crea una nueva variable
 
 <div className="row">
   <div className="col col--6">
@@ -132,11 +132,11 @@ const data = await response.json();
   </div>
 </div>
 
-## List all variables
+## Obtiene todas las variables
 
 ``get`` /variables
 
-Retrieve a list of all variables
+Recupera una lista de todas las variables
 
 <div className="row">
   <div className="col col--6">
@@ -324,11 +324,11 @@ data = response.json()
 
 
 
-## Delete a variable by ID
+## Elimina una variable por ID
 
 ``delete`` /variables/``{id}``
 
-Delete a specific variable by ID
+Elimina una variable específica por su ID
 
 <div className="row">
   <div className="col col--6">
