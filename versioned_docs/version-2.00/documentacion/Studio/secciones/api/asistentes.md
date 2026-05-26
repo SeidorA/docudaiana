@@ -1,7 +1,7 @@
 ---
 title: "Asistentes"
 description: "Referencia de API para crear y administrar asistentes virtuales inteligentes"
-slug: "/Studio/api/asistentes"
+slug: "/api/asistentes"
 sidebar_position: 1
 hide_table_of_contents: true
 ---

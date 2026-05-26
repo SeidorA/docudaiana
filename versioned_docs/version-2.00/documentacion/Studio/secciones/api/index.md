@@ -15,17 +15,17 @@ Aprende más sobre los detalles de algunas de las APIs más utilizadas: predicti
 
 <Accordion title="Consulta  todas las referencias de API públicas">
 <div className="row">
-    <Feature title="Asistentes" description="Referencia de API para crear y administrar asistentes virtuales inteligentes" link="/docs/Studio/api/asistentes" icon="network" />
-    <Feature title="Mensaje de Chat" description="Referencia de API para enviar y recibir mensajes dentro de conversaciones" link="/Studio/secciones/chatflows" icon="network" />
-    <Feature title="Flujos de Chat" description="Referencia de API para diseñar y controlar conversaciones automatizadas" link="/Studio/secciones/chatflows" icon="network" />
-    <Feature title="Almacén de Documentos" description="Referencia de API para almacenar, buscar y conectar documentos con tus flujos" link="/Studio/secciones/chatflows" icon="network" />
-    <Feature title="Retroalimentación" description="Referencia de API para recopilar y analizar opiniones de los usuarios" link="/Studio/secciones/chatflows" icon="network" />
-    <Feature title="Leads" description="Referencia de API para capturar y gestionar prospectos generados desde los flujos" link="/Studio/secciones/chatflows" icon="network" />
-    <Feature title="Ping" description="Referencia de API para monitorear disponibilidad y respuestas del sistema" link="/Studio/secciones/chatflows" icon="network" />
-    <Feature title="Predicción" description="Referencia de API para integrar modelos predictivos dentro de tus flujos" link="/Studio/secciones/chatflows" icon="network" />
-    <Feature title="Herramientas" description="Referencia de API para extender funcionalidades mediante herramientas personalizadas" link="/Studio/secciones/chatflows" icon="network" />
-    <Feature title="Actualizar Historial" description="Referencia de API para editar y actualizar interacciones previas del usuario" link="/Studio/secciones/chatflows" icon="network" />
-    <Feature title="Variables" description="Referencia de API para gestionar datos dinámicos en los flujos de conversación" link="/Studio/secciones/chatflows" icon="network" />
+    <Feature title="Asistentes" description="Referencia de API para crear y administrar asistentes virtuales inteligentes" link="/docs/api/asistentes" icon="network" />
+    <Feature title="Attachments" description="Return contents of the files in plain string format" icon="network" link="/docs/api/attachments" />
+    <Feature title="Chat Message" description="Referencia de API para crear y administrar asistentes virtuales" link="/docs/api/chatmessage" icon="network" />
+    <Feature title="Almacén de Documentos" description="Referencia de API para almacenar, buscar y conectar documentos con tus flujos" link="/docs/api/docstore" icon="network" />
+    <Feature title="Retroalimentación" description="Referencia de API para recopilar y analizar opiniones de los usuarios" link="/docs/api/feedback" icon="network" />
+    <Feature title="Leads" description="Referencia de API para capturar y gestionar prospectos generados desde los flujos" link="/docs/api/leads" icon="network" />
+    <Feature title="Ping" description="Referencia de API para monitorear disponibilidad y respuestas del sistema" link="/docs/api/ping" icon="network" />
+    <Feature title="Predicción" description="Referencia de API para integrar modelos predictivos dentro de tus flujos" link="/docs/api/prediction" icon="network" />
+    <Feature title="Herramientas" description="Referencia de API para extender funcionalidades mediante herramientas personalizadas" link="/docs/api/tools" icon="network" />
+    <Feature title="Actualizar Historial" description="Referencia de API para editar y actualizar interacciones previas del usuario" link="/docs/api/upsert-history" icon="network" />
+    <Feature title="Variables" description="Referencia de API para gestionar datos dinámicos en los flujos de conversación" link="/docs/api/variables" icon="network" />
 </div>
 </Accordion>
 
