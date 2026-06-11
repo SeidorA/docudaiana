@@ -1,6 +1,6 @@
 services:
   docusaurus:
-    image: cloudseidoranalytics/docudaiana:6e350f6cfb56da2a40eefc0f88311caa24ec42d6
+    image: cloudseidoranalytics/docudaiana:aa7abc8d478cbedaea7fc680987291b6196c3180
     ports:
       - "3030:80"
     restart: unless-stopped
